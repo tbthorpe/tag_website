@@ -30,7 +30,7 @@
 			</li>
 			<li>In the event that a tag is disuputed, the *present* players will take a vote. Those not witnessing the tag don't get a vote on its legitimacy. Majority wins</li>
 			<li>In the event of a tag dispute and there are only the tagger and tagee present, RPS, big star little star, first to two big stars - will determine the outcome.</li>
-			<li>NOTE: Don't dispute because you're upset you got got. Take the tag and play on. It's a game. Unless someone tries to send you a telegram to tag you. Dispute that and you should win, hands down.</li>
+			<li>NOTE: Don't dispute because you're upset that you got got. Take the tag and play on. It's a game. Unless someone tries to send you a telegram to tag you. Dispute that and you should win, hands down.</li>
 		</ul>
 	</div>
 </div>
