@@ -76,10 +76,10 @@ class DATABASE_CONFIG {
 	var $default = array(
 		'driver' => 'mysql',
 		'persistent' => false,
-		'host' => 'db459219842.db.1and1.com',
-		'login' => 'dbo459219842',
-		'password' => 'newyork',
-		'database' => 'db459219842',
+		'host' => '',
+		'login' => '',
+		'password' => '',
+		'database' => '',
 		'prefix' => '',
 		//'encoding' => 'utf8',
 	);
