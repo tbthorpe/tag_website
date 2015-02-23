@@ -1,8 +1,11 @@
 <div id="members" class="section">
 	<ul>
 		<?php foreach ($players as $player): ?>
-			<li class="round <?php echo $player['Player']['id'] == $it ? 'it' : ''; ?>">
+            <li pid="<?php echo $player['Player']['id']; ?>" class="round <?php echo $player['Player']['id'] == $it ? 'it' : ''; ?>">
 				<img src="/files/player_pics/<?php echo $player['MugShot']['filename']; ?>">
+                <?php if ($player['Player']['id'] == 14): ?>
+                    <img src="/files/quit-overlay.png" style="position:absolute;top:0px">
+                <?php endif; ?>
 				<div class="it_amount" style="height:<?php echo $tag_heights[$player['Player']['id']]; ?>"></div>
 			</li>
 		<?php endforeach; ?>

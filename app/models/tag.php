@@ -46,19 +46,6 @@ class Tag extends AppModel {
 
 			$people = array(
 				"+15857348692" => "Tank",
-				"+15183682399" => "Squirrel",
-				"+12034447962" => "Mazur",
-				"+19173304849" => "Kenny",
-				"+16317484509" => "Squeege",
-				"+19144007192" => "Ryan",
-				"+16463001424" => "Smash",
-				"+19175535736" => "Brown",
-				"+18455370586" => "B-Ri",
-				"+15183301659" => "Dasky",
-				"+19148048843" => "Ferri",
-				"+18454175496" => "Liv",
-				"+13153913276" => "Feetch",
-				"+16073290295" => "Ace",
 			);
  
     // Step 5: Loop over all our friends. $number is a phone number above, and 
@@ -68,7 +55,7 @@ class Tag extends AppModel {
  				$response = $client->request("/$ApiVersion/Accounts/$AccountSid/SMS/Messages", 
 					"POST", array(
 					"To" => $number,
-					"From" => "646-762-1311",
+					"From" => "646-630-7765",
 					"Body" => "Testing the tag game text. email me (tank) to confirm you got this. dont reply to this",
 				));
 
