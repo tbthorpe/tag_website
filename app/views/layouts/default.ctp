@@ -122,7 +122,7 @@
 			margin-right:0;
 		}
 		#members UL LI:nth-last-child(3){
-			margin-left:237px;
+            /*margin-left:237px;*/
 		}
 		#members UL LI.it{
 			border:6px solid red;

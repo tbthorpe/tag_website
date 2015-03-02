@@ -38,7 +38,6 @@ class TagsController extends AppController {
 		$this->set('tag', $this->Tag->read(null, $id));
 	}
 	function admin_test(){
-		$this->Tag->alertMe();
 	}
 
 	function admin_add() {

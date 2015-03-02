@@ -44,19 +44,37 @@ class Tag extends AppModel {
 
 			$client = new TwilioRestClient($AccountSid, $AuthToken);
 
+			//$people = array(
+			//	"+15857348692" => "Tank",
+			//);
 			$people = array(
 				"+15857348692" => "Tank",
+				"+15183682399" => "Squirrel",
+				"+12034447962" => "Mazur",
+				"+19173304849" => "Kenny",
+				"+16317484509" => "Squeege",
+				"+19144007192" => "Ryan",
+				"+16463001424" => "Smash",
+				"+19175535736" => "Brown",
+				"+18455370586" => "B-Ri",
+				//"+15183301659" => "Dasky",
+				"+19148048843" => "Ferri",
+				"+18454175496" => "Liv",
+				"+13153913276" => "Feetch",
+				"+16073290295" => "Ace",
+				"+15852165581" => "Slocum",
 			);
  
     // Step 5: Loop over all our friends. $number is a phone number above, and 
     // $name is the name next to it
     foreach ($people as $number => $name) {
  			if ($name !== $tagged){
- 				$response = $client->request("/$ApiVersion/Accounts/$AccountSid/SMS/Messages", 
+ 				$response = $client->request("/$ApiVersion/Accounts/$AccountSid/Messages", 
 					"POST", array(
 					"To" => $number,
 					"From" => "646-630-7765",
-					"Body" => "Testing the tag game text. email me (tank) to confirm you got this. dont reply to this",
+                    "Body" => "March is tomorrow. That means Tag is tomorrow. Good luck, gentlemen. lol dasky quit.",
+					"MediaUrl" => "http://www.markderksen.ca/wp-content/uploads/2013/06/tumblr_lglb2dJGeL1qzoxl6o1_500.jpg",
 				));
 
 				if($response->IsError) {
@@ -89,11 +107,12 @@ class Tag extends AppModel {
 				"+16463001424" => "Smash",
 				"+19175535736" => "Brown",
 				"+18455370586" => "B-Ri",
-				"+15183301659" => "Dasky",
+				//"+15183301659" => "Dasky",
 				"+19148048843" => "Ferri",
 				"+18454175496" => "Liv",
 				"+13153913276" => "Feetch",
 				"+16073290295" => "Ace",
+				//"+15852165581" => "Slocum",
 			);
  
     // Step 5: Loop over all our friends. $number is a phone number above, and 
