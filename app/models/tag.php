@@ -91,10 +91,10 @@ class Tag extends AppModel {
 		App::import('Vendor', 'twilio');	
 
 			$ApiVersion = "2010-04-01";
-			$AccountSid = "AC21fadf6db50131ddeed90e95f50045e6";
-			$AuthToken = "87004478707a5c816324c5e18eb2f38a";
+			$AccountSid = "NOPE";
+			$AuthToken = "NOPE";
 
-			$client = new TwilioRestClient($AccountSid, $AuthToken);
+			//$client = new TwilioRestClient($AccountSid, $AuthToken);
 
 
 			$people = array(
@@ -119,12 +119,12 @@ class Tag extends AppModel {
     // $name is the name next to it
     foreach ($people as $number => $name) {
  			if ($name !== $tagged){
- 				$response = $client->request("/$ApiVersion/Accounts/$AccountSid/SMS/Messages", 
-					"POST", array(
-					"To" => $number,
-					"From" => "646-762-1311",
-					"Body" => "Yo " . $name . ", " . $tagger . " just tagged " . $tagged,
-				));
+ 				//$response = $client->request("/$ApiVersion/Accounts/$AccountSid/SMS/Messages", 
+				//	"POST", array(
+				//	"To" => $number,
+				//	"From" => "646-762-1311",
+				//	"Body" => "Yo " . $name . ", " . $tagger . " just tagged " . $tagged,
+				//));
 
 				if($response->IsError) {
 					echo "{$response->ErrorMessage}";	
