@@ -39,10 +39,10 @@ class Tag extends AppModel {
 		App::import('Vendor', 'twilio');	
 
 			$ApiVersion = "2010-04-01";
-			$AccountSid = "AC21fadf6db50131ddeed90e95f50045e6";
-			$AuthToken = "87004478707a5c816324c5e18eb2f38a";
+			$AccountSid = "NO";
+			$AuthToken = "NO";
 
-			$client = new TwilioRestClient($AccountSid, $AuthToken);
+			//$client = new TwilioRestClient($AccountSid, $AuthToken);
 
 			//$people = array(
 			//	"+15857348692" => "Tank",
@@ -69,13 +69,13 @@ class Tag extends AppModel {
     // $name is the name next to it
     foreach ($people as $number => $name) {
  			if ($name !== $tagged){
- 				$response = $client->request("/$ApiVersion/Accounts/$AccountSid/Messages", 
-					"POST", array(
-					"To" => $number,
-					"From" => "646-630-7765",
+ 				//$response = $client->request("/$ApiVersion/Accounts/$AccountSid/Messages", 
+				//	"POST", array(
+				//	"To" => $number,
+				//	"From" => "646-630-7765",
                     "Body" => "March is tomorrow. That means Tag is tomorrow. Good luck, gentlemen. lol dasky quit.",
-					"MediaUrl" => "http://www.markderksen.ca/wp-content/uploads/2013/06/tumblr_lglb2dJGeL1qzoxl6o1_500.jpg",
-				));
+				//	"MediaUrl" => "http://www.markderksen.ca/wp-content/uploads/2013/06/tumblr_lglb2dJGeL1qzoxl6o1_500.jpg",
+				//));
 
 				if($response->IsError) {
 					echo "{$response->ErrorMessage}";	
